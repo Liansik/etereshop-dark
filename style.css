@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000112;
+}
+section p, h2{
+    color: #fff;
+}
+
+section h2{
+    padding: 20px 40px;
+    font-size: 4em;
+}
+
+section p{
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+.pic{
+
+    display: inline;
+    padding-left: 30%;
+    justify-content: center;
+}
+.light{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
