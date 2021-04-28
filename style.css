@@ -2,39 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif
 }
-
 section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000112;
-}
-section p, h2{
-    color: #fff;
-}
-
-section h2{
-    padding: 20px 40px;
-    font-size: 4em;
-}
-
-section p{
-    font-size: 1.2em;
-    padding: 10px 10px;
-}
-.pic{
-
-    display: inline;
-    padding-left: 30%;
-    justify-content: center;
-}
-.light{
     position: absolute;
-    top:0;
-    left:0;
-    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+section .content{
+    max-width: 80%;
+    color: #ffffff;
+}
+
+section .content h2{
+    font-size: 3em;
+}
+section .content p{
+    font-size: 2em;
+}
+section .parabola{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+section .parabola p{
+    color: #ffffff;
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 80vh;
+    width: 100%;
+}
+canvas{
+    position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 1;
+    background: #ffffff;
+    z-index: 2;
+    mix-blend-mode: screen;
 }
